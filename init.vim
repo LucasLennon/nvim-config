@@ -439,6 +439,7 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
 " Custom Stuff
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_conceal_function             = "ƒ"
@@ -456,3 +457,23 @@ let g:javascript_conceal_arrow_function       = "⇒"
 let g:jsx_ext_required = 1
 let g:python2_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
+
+" Custom Configs for Hard Mode without distant keys 
+" This will hopefully improve my VIM key knowledge 
+inoremap <Left> <nop>
+inoremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <BS> <nop>
+
+nnoremap <Left> <nop>
+nnoremap <Right> <nop>
+nnoremap <Up> <nop>
+nnoremap <Down> <nop>
+nnoremap <BS> <nop>
+
+vnoremap <Left> <nop>
+vnoremap <Right> <nop>
+vnoremap <Up> <nop>
+vnoremap <Down> <nop>
+vnoremap <BS> <nop>

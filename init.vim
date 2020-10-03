@@ -49,6 +49,8 @@ Plug 'eslint/eslint'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-surround'
 Plug 'janko-m/vim-test'
+Plug 'Galooshi/import-js'
+Plug 'Galooshi/vim-import-js'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -462,9 +464,9 @@ let g:python3_host_prog = '/usr/bin/python3'
 " This will hopefully improve my VIM key knowledge 
 inoremap <Left> <nop>
 inoremap <Right> <nop>
-inoremap <Up> <nop>
-inoremap <Down> <nop>
-inoremap <BS> <nop>
+" inoremap <Up> <nop>
+" inoremap <Down> <nop>
+" inoremap <BS> <nop>
 
 nnoremap <Left> <nop>
 nnoremap <Right> <nop>

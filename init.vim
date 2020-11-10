@@ -158,3 +158,9 @@ let g:javascript_conceal_arrow_function       = "⇒"
 let g:jsx_ext_required = 1
 let g:python2_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
+let g:airline_theme='onedark'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+
+set autochdir
+set autoread

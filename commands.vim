@@ -68,7 +68,7 @@ nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
-nmap <A-S-e> :ALEFix<CR>
+nmap <A-S-e> :CocCommand eslint.executeAutofix<CR>
 
 nmap <silent> <F4> :TagbarToggle<CR>
 

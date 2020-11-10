@@ -37,11 +37,12 @@ let g:session_command_aliases = 1
 "*****************************************************************************
 "" Visual Settings
 "*****************************************************************************
+set inccommand=nosplit
 syntax on
 set ruler
 set number
 let no_buffers_menu=1
-colorscheme molokai
+colorscheme onedark
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti

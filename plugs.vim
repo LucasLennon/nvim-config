@@ -30,7 +30,7 @@ Plug 'joshdick/onedark.vim'
 
 
 "Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -62,12 +62,12 @@ Plug 'machakann/vim-highlightedyank'
 " call deoplete#custom#option('sources', {
 " \ '_': ['ale'],
 " \})
-" if isdirectory('/usr/local/opt/fzf')
-"   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-" else
-"   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-"   Plug 'junegunn/fzf.vim'
-" endif
+if isdirectory('/usr/local/opt/fzf')
+  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+else
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+  Plug 'junegunn/fzf.vim'
+endif
 let g:make = 'gmake'
 if exists('make')
         let g:make = 'make'
@@ -99,9 +99,8 @@ Plug 'mattn/emmet-vim'
 " vuejs
 " Plug 'posva/vim-vue'
 " Plug 'leafOfTree/vim-vue-plugin'
-"*****************************************************************************
-"*****************************************************************************
-"" Include user's extra bundle
+Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
 if filereadable(expand("~/.config/nvim/local_bundles.vim"))
   source ~/.config/nvim/local_bundles.vim
 endif

@@ -114,3 +114,6 @@ vnoremap <Right> <nop>
 vnoremap <Up> <nop>
 vnoremap <Down> <nop>
 vnoremap <BS> <nop>
+
+nnoremap <Leader><C-P> :GFiles<CR>
+nnoremap <C-P> :Files<CR>

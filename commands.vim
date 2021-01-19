@@ -68,7 +68,12 @@ nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
-nmap <A-S-e> :CocCommand eslint.executeAutofix<CR>
+" nmap <A-S-e> :CocCommand eslint.executeAutofix<CR>
+nmap <A-S-e> :ALEFix<CR>
+nmap <leader>agtd :ALEGoToDefinition<CR>
+nmap <leader>ar :ALERename<CR>
+nmap <leader>aca :ALECodeAction<CR>
+nmap <leader>afr :ALEFindReferences<CR>
 
 nmap <silent> <F4> :TagbarToggle<CR>
 
@@ -105,8 +110,8 @@ vnoremap K :m '<-2<CR>gv=gv
 "" Open current line on GitHub
 nnoremap <Leader>o :.Gbrowse<CR>
 
-" Custom Configs for Hard Mode without distant keys 
-" This will hopefully improve my VIM key knowledge 
+" Custom Configs for Hard Mode without distant keys
+" This will hopefully improve my VIM key knowledge
 nnoremap <BS> <nop>
 
 vnoremap <Left> <nop>

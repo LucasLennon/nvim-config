@@ -5,7 +5,7 @@ else
   let curl_exists=expand('curl')
 endif
 " let g:vim_bootstrap_langs = "html,javascript,typescript"
-" let g:vim_bootstrap_editor = "nvim" 
+" let g:vim_bootstrap_editor = "nvim"
 " let g:vim_bootstrap_theme = "molokai"
 " let g:vim_bootstrap_frams = "vuejs"
 if !filereadable(vimplug_exists)
@@ -29,7 +29,7 @@ Plug 'joshdick/onedark.vim'
 " Plug 'tomasr/molokai'
 
 
-"Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 " Plug 'kien/ctrlp.vim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
@@ -41,13 +41,13 @@ Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/CSApprox'
 Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'
-" Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 " Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'eslint/eslint'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-surround'
 Plug 'janko-m/vim-test'
 Plug 'machakann/vim-highlightedyank'
@@ -100,7 +100,7 @@ Plug 'mattn/emmet-vim'
 " Plug 'posva/vim-vue'
 " Plug 'leafOfTree/vim-vue-plugin'
 Plug 'mhinz/vim-startify'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 if filereadable(expand("~/.config/nvim/local_bundles.vim"))
   source ~/.config/nvim/local_bundles.vim
 endif

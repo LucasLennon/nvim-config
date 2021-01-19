@@ -57,13 +57,25 @@ let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
 " ale
 " let g:ale_linters = []
+" let g:ale_disable_lsp = 1
 let g:ale_linters = {
 \  'javascript': ['eslint','tsserver'],
+\  'typescript': ['eslint','tsserver'],
+\  'typescriptreact': ['eslint','tsserver'],
+\  'json': ['jsonlint'],
+\  'jsonc': ['jsonlint'],
 \}
+let g:ale_completion_enabled = 1
 let g:ale_completion_autoimport = 1
 let g:ale_fixers = {
- \ 'javascript': ['eslint'],
- \ }
+\  'javascript': ['eslint'],
+\  'typescript': ['eslint'],
+\  'typescriptreact': ['eslint'],
+\  'html': ['html-beautify'],
+\  'json': ['fixjson', 'prettier'],
+\  'jsonc': ['fixjson', 'prettier'],
+\  '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ }
 let g:ale_fix_on_save = 1
 " let g:ale_javascript_eslint_options = {}
 
@@ -156,11 +168,12 @@ let g:javascript_conceal_arrow_function       = "⇒"
 " let g:javascript_conceal_noarg_arrow_function = "🞅"
 " let g:javascript_conceal_underscore_arrow_function = "🞅"
 let g:jsx_ext_required = 1
-let g:python2_host_prog = '/usr/bin/python2'
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python2_host_prog = '/home/lucaslennon/.pyenv/versions/2.7.18/bin/python'
+let g:python3_host_prog = '/home/lucaslennon/.pyenv/versions/3.8.5/bin/python'
 let g:airline_theme='onedark'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:startify_change_to_dir = 0
 
 
-set autochdir
-set autoread
+" set autochdir
+" set autoread

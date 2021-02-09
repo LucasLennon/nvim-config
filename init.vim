@@ -174,6 +174,8 @@ let g:airline_theme='onedark'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:startify_change_to_dir = 0
 
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.js,*.jsx"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.erb'
 
 " set autochdir
 " set autoread

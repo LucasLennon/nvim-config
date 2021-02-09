@@ -51,6 +51,7 @@ Plug 'eslint/eslint'
 Plug 'tpope/vim-surround'
 Plug 'janko-m/vim-test'
 Plug 'machakann/vim-highlightedyank'
+Plug 'alvan/vim-closetag'
 " if has('nvim')
 "   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " else
